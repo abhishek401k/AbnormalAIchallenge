@@ -15,8 +15,8 @@ A web application designed for secure file sharing with user authentication, fil
 
 ### Prerequisites
 
-- Docker
-- Docker Compose
+Docker
+Docker Compose
 
 ### Installation
 
@@ -34,13 +34,13 @@ Navigate to the project directory and use Docker Compose to build and run the ap
    ```
 
 This command will:
-- Start PostgreSQL for the backend database.
-- Build and run the Django backend.
-- Build and run the React frontend served by Nginx.
+ Start PostgreSQL for the backend database.
+ Build and run the Django backend.
+ Build and run the React frontend served by Nginx.
 
 ## Usage
--Backend: Access the Django admin at http://localhost:8000/admin/ (if you've set up admin credentials).
--Frontend: Visit http://localhost:3000/ to interact with the UI.
+Backend: Access the Django admin at http://localhost:8000/admin/ (if you've set up admin credentials).
+Frontend: Visit http://localhost:3000/ to interact with the UI.
 
 Configuration
 Environment Variables: Sensitive configurations are managed through environment variables in ```docker-compose.yml```. Ensure ```SECRET_KEY``` for Django is securely set before production use.
@@ -92,17 +92,17 @@ For changes in either frontend or backend, rebuild the Docker images with:
 `docker-compose up --build`
 
 **Security Considerations**
-**SSL/TLS**: Ensure production environments use HTTPS.
-**Password Hashing**: Using `bcrypt` for password security.
-**JWT**: For stateless authentication.
-**CORS**: Configured in Django settings for frontend-backend communication.
+SSL/TLS: Ensure production environments use HTTPS.
+Password Hashing: Using `bcrypt` for password security.
+JWT: For stateless authentication.
+CORS: Configured in Django settings for frontend-backend communication.
 
 **Contributing**
--Fork the repository.
--Create your feature branch (`git checkout -b feature/AmazingFeature`).
--Commit your changes (`git commit -m 'Add some AmazingFeature`).
--Push to the branch (`git push origin feature/AmazingFeature`).
--Open a Pull Request.
+Fork the repository.
+Create your feature branch (`git checkout -b feature/AmazingFeature`).
+Commit your changes (`git commit -m 'Add some AmazingFeature`).
+Push to the branch (`git push origin feature/AmazingFeature`).
+Open a Pull Request.
 
 
 
