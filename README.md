@@ -1,32 +1,31 @@
 
-# Secure File Sharing Application
+Secure File Sharing Application
 
 A web application designed for secure file sharing with user authentication, file encryption, and shareable links with expiration.
 
-## Features
+Features
 
-- **User Authentication**: Registration, login with multi-factor authentication.
-- **File Management**: Upload, encrypt, and manage files.
-- **Secure Sharing**: Generate shareable links with an expiration time.
-- **Frontend**: React-based UI with Redux for state management.
-- **Backend**: Django REST Framework for API, with JWT for authentication.
-- **Dockerized**: For easy deployment and consistency across different environments.
+- User Authentication: Registration, login with multi-factor authentication.
+- File Management: Upload, encrypt, and manage files.
+- Secure Sharing: Generate shareable links with an expiration time.
+- Frontend: React-based UI with Redux for state management.
+- Backend: Django REST Framework for API, with JWT for authentication.
+- Dockerized: For easy deployment and consistency across different environments.
 
-## Getting Started
+ Getting Started
 
-### Prerequisites
+ Prerequisites
 
 - Docker
 - Docker Compose
 
-### Installation
+ Installation
 
-1. **Clone the Repository**
+1. Clone the Repository
 
    ```bash
    git clone [Your Repo URL]
    cd secure-file-sharing
-
 Build and Run Containers
 Navigate to the project directory and use Docker Compose to build and run the application:
 bash
@@ -45,7 +44,10 @@ Configuration
 Environment Variables: Sensitive configurations are managed through environment variables in docker-compose.yml. Ensure SECRET_KEY for Django is securely set before production use.
 Database: The application uses PostgreSQL. Connection details are managed in the Docker Compose file.
 
+
+
 Project Structure
+
 secure-file-sharing/
 ├── docker-compose.yml
 ├── file-sharing-client/     # React Frontend
